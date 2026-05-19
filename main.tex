@@ -1,0 +1,173 @@
+\documentclass[12pt, oneside, openany]{book}
+
+% ── Encoding & Font ──────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+
+% ── Language ─────────────────────────────────────────────────────────────────
+\usepackage[spanish,es-noshorthands]{babel}
+
+% ── Page geometry ────────────────────────────────────────────────────────────
+\usepackage[
+  paperwidth=6in,
+  paperheight=9in,
+  top=0.85in,
+  bottom=0.85in,
+  inner=0.75in,
+  outer=0.65in
+]{geometry}
+
+% ── Tables ───────────────────────────────────────────────────────────────────
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{xltabular}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+
+% ── Colour, graphics ─────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% ── Typography ───────────────────────────────────────────────────────────────
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% ── Headers and footers ──────────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape\leftmark}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% ── Chapter titles ───────────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\large\bfseries\centering}
+  {\chaptertitlename\ \thechapter}
+  {12pt}
+  {\LARGE}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+
+% ── Hyperlinks ───────────────────────────────────────────────────────────────
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black,
+  pdftitle={Prácticas Cartománticas de Uso Práctico},
+  pdfauthor={Gaius Jocundus, Thalia Ephemera},
+  bookmarks=true
+]{hyperref}
+
+% ── Bibliography ─────────────────────────────────────────────────────────────
+\usepackage[backend=biber, style=authoryear, sorting=nyt]{biblatex}
+\addbibresource{references.bib}
+
+% ── Pandoc compatibility ─────────────────────────────────────────────────────
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% ── Misc ─────────────────────────────────────────────────────────────────────
+\setlength{\headheight}{14pt}
+\usepackage{emptypage}
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ── Cover ────────────────────────────────────────────────────────────────────
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{\fill}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{cover.jpg}
+    \vspace*{\fill}
+  \end{center}
+\end{titlepage}
+
+% ── Title page ───────────────────────────────────────────────────────────────
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{2cm}
+    {\Huge\bfseries Prácticas Cartománticas\\[0.4em]de Uso Práctico}
+    \vspace{1.5cm}
+
+    {\large Gaius Jocundus \& Thalia Ephemera}
+    \vspace{1cm}
+
+    \vfill
+    {\large \copyright\ 2026 Gaius Jocundus \& Thalia Ephemera\\[0.3em]
+    \normalsize Todos los derechos reservados.}
+  \end{center}
+\end{titlepage}
+
+\frontmatter
+\tableofcontents
+\clearpage
+
+% ── Introduction ─────────────────────────────────────────────────────────────
+\mainmatter
+\chapter*{Introducción}
+\addcontentsline{toc}{chapter}{Introducción}
+\markboth{Introducción}{Introducción}
+\input{chapters/intro}
+
+% ── Capítulo Uno: El Tarot Mágico de la Golden Dawn ──────────────────────────
+\chapter*{El Tarot Mágico de la Golden Dawn}
+\addcontentsline{toc}{chapter}{El Tarot Mágico de la Golden Dawn}
+\markboth{El Tarot Mágico de la Golden Dawn}{El Tarot Mágico de la Golden Dawn}
+\input{chapters/preface_gd}
+\clearpage
+\input{chapters/golden_dawn_magical_tarot}
+
+% ── Capítulo Dos: El Tarot Smith-Waite ───────────────────────────────────────
+\chapter*{El Tarot Smith-Waite}
+\addcontentsline{toc}{chapter}{El Tarot Smith-Waite}
+\markboth{El Tarot Smith-Waite}{El Tarot Smith-Waite}
+\input{chapters/preface_sw}
+\clearpage
+\input{chapters/smith_waite_tarot}
+
+% ── Capítulo Tres: El Sistema Inglés de Cartomancia con Naipes ───────────────
+\chapter*{El Sistema Inglés de Cartomancia con Naipes}
+\addcontentsline{toc}{chapter}{El Sistema Inglés de Cartomancia con Naipes}
+\markboth{El Sistema Inglés de Cartomancia con Naipes}{El Sistema Inglés de Cartomancia con Naipes}
+\input{chapters/preface_english}
+\clearpage
+\input{chapters/english_playing_card_system}
+
+% ── Capítulo Cuatro: El Oráculo Lenormand ────────────────────────────────────
+\chapter*{El Oráculo Lenormand}
+\addcontentsline{toc}{chapter}{El Oráculo Lenormand}
+\markboth{El Oráculo Lenormand}{El Oráculo Lenormand}
+\input{chapters/preface_lenormand}
+\clearpage
+\input{chapters/lenormand_playing_card_oracle}
+
+% ── Capítulo Final ───────────────────────────────────────────────────────────
+\chapter*{Los Cuatro Instrumentos en Práctica}
+\addcontentsline{toc}{chapter}{Los Cuatro Instrumentos en Práctica}
+\markboth{Los Cuatro Instrumentos en Práctica}{Los Cuatro Instrumentos en Práctica}
+\input{chapters/final_chapter}
+
+% ── Bibliography ─────────────────────────────────────────────────────────────
+\backmatter
+\nocite{*}
+\printbibliography[heading=bibintoc, title={Fuentes}]
+
+\end{document}

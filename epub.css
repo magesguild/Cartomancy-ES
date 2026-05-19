@@ -1,0 +1,292 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Cartomantic Practices for Practical Use
+   EPUB Stylesheet — 6×9 trade paperback, fixed book layout
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Page size (6×9 trade paperback) ─────────────────────────────────────── */
+@page {
+  size: 6in 9in;
+  margin: 0.75in 0.65in 0.75in 0.65in;
+}
+
+/* ── Reset ───────────────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Body ────────────────────────────────────────────────────────────────── */
+body {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 0.95em;
+  line-height: 1.75;
+  color: #111111;
+  background: #ffffff;
+  margin: 1.5em 2em;
+  text-rendering: optimizeLegibility;
+  max-width: 100%;
+}
+
+/* ── Chapter headings (H1) ───────────────────────────────────────────────── */
+h1 {
+  font-size: 1.9em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 1.2em 0;
+  padding: 0.6em 0;
+  border-top: 3px solid #111;
+  border-bottom: 1px solid #555;
+  page-break-before: always;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+h1:first-child { page-break-before: avoid; }
+
+/* ── Section headings (H2) ───────────────────────────────────────────────── */
+h2 {
+  font-size: 1.15em;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  margin: 2em 0 0.6em 0;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #999;
+  page-break-after: avoid;
+}
+
+/* ── Subsection (H3) ─────────────────────────────────────────────────────── */
+h3 {
+  font-size: 1.03em;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1.8em 0 0.4em 0;
+  page-break-after: avoid;
+}
+
+/* ── Sub-subsection (H4) ─────────────────────────────────────────────────── */
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1.4em 0 0.3em 0;
+  page-break-after: avoid;
+}
+
+/* ── Body text ───────────────────────────────────────────────────────────── */
+p {
+  text-indent: 1.5em;
+  margin: 0 0 0.15em 0;
+  text-align: justify;
+  hyphens: auto;
+  -epub-hyphens: auto;
+  orphans: 2;
+  widows: 2;
+}
+
+/* No indent inside lists, tables, blockquotes */
+li p,
+td p,
+th p,
+blockquote p {
+  text-indent: 0;
+  margin: 0;
+}
+
+/* ── Lists ───────────────────────────────────────────────────────────────── */
+ul, ol {
+  margin: 0.5em 0 0.8em 1.8em;
+}
+
+li {
+  margin-bottom: 0.3em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ── Horizontal rules ────────────────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 2em auto;
+  width: 35%;
+}
+
+/* ── Inline emphasis ─────────────────────────────────────────────────────── */
+strong { font-weight: bold; }
+em     { font-style: italic; }
+
+/* ── Blockquote ──────────────────────────────────────────────────────────── */
+blockquote {
+  margin: 1.2em 2em;
+  padding: 0.4em 1em;
+  border-left: 3px solid #777;
+  color: #333;
+  font-style: italic;
+}
+
+/* ── Code ────────────────────────────────────────────────────────────────── */
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.82em;
+  background: #f4f4f4;
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78em;
+  background: #f4f4f4;
+  border-left: 3px solid #999;
+  padding: 0.8em 1em;
+  margin: 1.2em 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* ── Images ──────────────────────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* ── TOC ─────────────────────────────────────────────────────────────────── */
+nav#toc h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.12em;
+  font-variant: small-caps;
+  border-top: 3px solid #111;
+  border-bottom: 1px solid #555;
+  padding: 0.5em 0;
+  margin-bottom: 1.5em;
+  page-break-before: avoid;
+}
+
+/* List resets */
+nav#toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Chapter-level entries ── */
+nav#toc > ol > li {
+  display: block;
+  margin: 0.7em 0 0 0;
+}
+
+/* Chapter link row: name + dotted leader */
+nav#toc > ol > li > a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: #111;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+}
+
+nav#toc > ol > li > a::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px dotted #888;
+  margin: 0 0 0.2em 0.4em;
+}
+
+/* ── Section-level entries (nested ol) ── */
+nav#toc > ol > li > ol {
+  display: block;
+  margin: 0.2em 0 0.3em 1.8em;
+  padding: 0;
+}
+
+nav#toc > ol > li > ol > li {
+  display: block;
+  margin: 0.2em 0;
+}
+
+/* Section link row: name + dotted leader */
+nav#toc > ol > li > ol > li > a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: #444;
+  font-size: 0.88em;
+  font-style: italic;
+  font-weight: normal;
+  width: 100%;
+}
+
+nav#toc > ol > li > ol > li > a::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px dotted #bbb;
+  margin: 0 0 0.15em 0.4em;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   TABLES
+   Designed to fit a 4.5" text block (6×9 book with 0.65" side margins).
+   Font shrinks to 0.78em so a 7-column table can breathe.
+   All cells wrap freely — vertical space is unlimited, horizontal is not.
+   ═══════════════════════════════════════════════════════════════════════════ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6em 0;
+  font-size: 0.78em;
+  line-height: 1.5;
+  table-layout: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  page-break-inside: auto;
+}
+/* Dark header */
+thead tr {
+  background-color: #1c1c2e;
+  color: #f5f5f0;
+}
+th {
+  text-align: left;
+  padding: 0.45em 0.55em;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-size: 0.92em;
+  border: 1px solid #3a3a4e;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* Body cells */
+td {
+  padding: 0.38em 0.55em;
+  vertical-align: top;
+  border: 1px solid #d0d0d8;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* Zebra rows */
+tr:nth-child(odd)  td { background-color: #ffffff; }
+tr:nth-child(even) td { background-color: #eef1f8; }
+/* First column — label/key — slightly emphasised but still wraps */
+td:first-child {
+  font-weight: bold;
+  color: #1c1c2e;
+  border-right: 2px solid #9a9ab0;
+}
+/* Last row bottom rule */
+tbody tr:last-child td {
+  border-bottom: 2px solid #777;
+}
+/* Outer border */
+table {
+  border: 1px solid #777;
+}
+/* Allow rows to break across pages in long tables */
+tr { page-break-inside: avoid; }
