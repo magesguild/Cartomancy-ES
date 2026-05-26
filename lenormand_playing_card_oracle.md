@@ -1,6 +1,10 @@
 # Oráculo Lenormand
 
-![](img_lenormand.jpg)
+<div class="center">
+
+<img src="img_lenormand.jpg" style="width:85.0%" alt="image" />
+
+</div>
 
 ## Principios de Funcionamiento
 
