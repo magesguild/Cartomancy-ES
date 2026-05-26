@@ -1,0 +1,17 @@
+# El Instrumento más Exigente
+
+Empezamos por el instrumento más exigente, porque el marco cosmológico que establece es la base de todo lo demás en este libro. El Tarot Mágico de la Golden Dawn no es solo una herramienta de adivinación: es un mapa completo de la tradición mágica occidental plasmado en 78 cartas. Su estructura cabalística, sus atribuciones elementales y sus correspondencias astrológicas no son meros adornos. Son la esencia misma. Un lector que entienda por qué el Tres de Bastos es Marte en Aries y lo que eso significa en el Árbol de la Vida tiene acceso a una precisión interpretativa que ninguna lectura intuitiva, por muy buena que sea, puede igualar.
+
+Este capítulo da por hecho que esa precisión ya la tenés o la vas desarrollando a medida que lees el documento. Lo que viene a continuación es una referencia, no un tutorial.
+
+<div class="center">
+
+------------------------------------------------------------------------
+
+</div>
+
+<div class="center">
+
+------------------------------------------------------------------------
+
+</div>
