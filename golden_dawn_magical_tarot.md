@@ -1,5 +1,7 @@
 # Tarot Mágico de la Golden Dawn (Cicero)
 
+![](img_cicero.jpg)
+
 ## Principios de Funcionamiento
 
 Este sistema opera a nivel de fuerzas arquetípicas y cosmológicas. Cada carta es a la vez una estación en el mapa cabalístico de la realidad, un acontecimiento astrológico, una fuerza adivinatoria y un objeto de meditación. Para leer la baraja con soltura, hay que tener en cuenta todas las capas a la vez sin que se confundan entre sí.

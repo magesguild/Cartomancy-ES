@@ -1,5 +1,7 @@
 # Oráculo Lenormand
 
+![](img_lenormand.jpg)
+
 ## Principios de Funcionamiento
 
 Este sistema opera a nivel de las circunstancias: qué está pasando, a quién le pasa, en qué ámbito y en qué relación con todo lo demás. Interpreta el mundo material con precisión y sin sentimentalismos. Donde el sistema de naipes inglés lee cartas individuales en tiradas con posiciones definidas, este sistema lee cadenas de cartas a lo largo de un campo. La unidad de significado no es la carta, sino la combinación. Una sola carta te da un sustantivo. Dos cartas te dan una oración. El cuadro completo te da un mapa.

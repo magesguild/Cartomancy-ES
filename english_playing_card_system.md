@@ -1,5 +1,7 @@
 # Cartomancia con Naipes Ingleses
 
+![](img_playing_cards.jpg)
+
 ## Principios de Funcionamiento
 
 Este sistema opera a nivel de las circunstancias, las relaciones y el movimiento temporal: la textura de la vida cotidiana. Responde a preguntas sobre qué está pasando realmente y a quién.
