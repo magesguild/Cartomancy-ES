@@ -1,9 +1,9 @@
+![Portada](cover.jpg)
+
 # Prácticas Cartománticas de Uso Práctico
 
 **Gaius Jocundus & Thalia Ephemera** — 2026  
 Licencia [CC BY 4.0](LICENSE) — libre para uso comercial con atribución.
-
-![Portada](cover.jpg)
 
 ---
 
