@@ -439,6 +439,11 @@ El método adivinatorio completo de GD del Libro T, usado para consultas serias.
 
 Una tirada para preguntas complejas que presenta dos posibles caminos hacia adelante. Documentada en el material complementario de la baraja Cicero. Se disponen quince cartas en cinco filas de tres, numeradas en espiral desde el centro hacia afuera en sentido antihorario:
 
+<figure>
+<img src="img_fifteen_card_spread.png" style="width:85.0%" />
+<figcaption>Imagen: <a href="https://seaqueen.wordpress.com/2023/07/18/15-card-english-golden-dawn-spread-featuring-ciro-marchettis-gilded-tarot-royale-deck-commenters-request-part-2-2-clarification-card-barbara-moores-classic-tarot-king-of-wands/" class="uri">https://seaqueen.wordpress.com/2023/07/18/15-card-english-golden-dawn-spread-featuring-ciro-marchettis-gilded-tarot-royale-deck-commenters-request-part-2-2-clarification-card-barbara-moores-classic-tarot-king-of-wands/</a></figcaption>
+</figure>
+
 Las cartas se leen en cinco trinidades. La carta central de cada trinidad es la principal; las cartas flanqueantes son sus modificadoras, ponderadas por dignidad elemental. No se usan inversiones.
 
 - **Cartas 1, 2, 3 — El Consultante:** La carta 1 es el núcleo de la tirada: el consultante, la naturaleza de la pregunta y las principales influencias operativas. Las cartas 2 y 3 amplían la lectura de la carta 1, describiendo las circunstancias que la rodean y la naturaleza propia del consultante en relación con el asunto.
